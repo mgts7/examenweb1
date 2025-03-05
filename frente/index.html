@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    table, th, td {
-      border:1px solid black;
-    }
-    </style>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pagina Migue</title>
+    <title>Página Migue</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-size: 1.5rem;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .delete-button {
+            background-color: #ddd;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .delete-button img {
+            width: 30px;
+            height: 30px;
+            transition: content 0.2s ease-in-out;
+        }
+
+        .delete-button:hover {
+            transform: scale(1.1);
+        }
+
+        .delete-button:hover img {
+            content: url('basuraAbierta.png');
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Titulo</h1>
+    <h1>Las Placas más Putas de Medellín</h1>
     <table>
         <tr>
-          <th>Placa</th>
-          <th>Marca</th>
-          <th>Modelo</th>
-          <th>Color</th>
-          <th>Eliminar</th>
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Eliminar</th>
         </tr>
         <tr>
-          <td>IAT373</td>
-          <td>Ferrari</td>
-          <td>2020</td>
-          <td>Gris Medellin</td>
-          <td><button>Eliminar</button></td>
+            <td>JHP353</td>
+            <td>Ferrari</td>
+            <td>2017</td>
+            <td>Gris Medellín</td>
+            <td>
+                <button class="delete-button">
+                    <img src="basura.png" alt="Eliminar">
+                </button>
+            </td>
         </tr>
     </table>
-<br>
-<h2> Ingresar Carro</h2>
+
+    <br>
+
+    <h2>Ingresar Carro</h2>
     <form action="">
         <label for="placa">Placa:</label><br>
         <input type="text"><br>
         <label for="marca">Marca:</label><br>
+        <input type="text"><br>
+        <label for="modelo">Modelo:</label><br>
+        <input type="text"><br>
+        <label for="color">Color:</label><br>
         <input type="text"><br><br>
-        <input type="submit" value="Registar">
-      </form>
-      
+        <input type="submit" value="Registrar">
+    </form>
 
-    
-
-    
 </body>
+
 </html>
